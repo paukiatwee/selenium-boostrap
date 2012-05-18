@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
@@ -14,8 +15,11 @@ public final class SimpelTest {
     @Before
     public void before() {
         FirefoxProfile profile = new FirefoxProfile();
+        FirefoxBinary binary = new FirefoxBinary();
+        String xport = System.getProperty("Importal.xvfb.id", ":1");
+        binary.setEnvironmentProperty("DISPLAY", xport);
         profile.setEnableNativeEvents(true);
-        driver = new FirefoxDriver(profile);
+        driver = new FirefoxDriver(binary, profile);
     }
 
     @Test
