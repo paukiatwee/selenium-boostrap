@@ -124,8 +124,8 @@
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
         <configuration>
-          <stopkey>foo</stopkey>
-          <stopport>9998</stopport>
+          <stopKey>foo</stopKey>
+          <stopPort>9966</stopPort>
           <webAppConfig>
             <contextPath>/</contextPath>
           </webAppConfig>
