@@ -37,9 +37,9 @@
       <div class="span5 offset3">
         <form class="well" action="/login" method="post">
           <label for="username">Username</label>
-          <input type="text" class="input-xlarge" name="username" placeholder="Your username..." autofocus="autofocus">
+          <input type="text" class="input-xlarge username" name="username" placeholder="Your username..." autofocus="autofocus">
           <label for="password">Password</label>
-          <input type="password" class="input-xlarge" name="password" placeholder="Your password...">
+          <input type="password" class="input-xlarge password" name="password" placeholder="Your password...">
           <label class="checkbox">
             <input type="checkbox"> Remember Me
           </label>
