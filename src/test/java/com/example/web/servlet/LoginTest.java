@@ -3,6 +3,8 @@
  */
 package com.example.web.servlet;
 
+import junit.framework.Assert;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +32,7 @@ public class LoginTest {
     public void loginFailed() throws InterruptedException {
         selenium.windowMaximize();
         login("sysadmin", "wrongpassword");
-        selenium.isElementPresent("css=.alert.alert-error");
+        Assert.assertTrue(selenium.isElementPresent("css=.alert.alert-error"));
         Thread.sleep(1000);
     }
     @Test
